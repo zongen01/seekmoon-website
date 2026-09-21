@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbf8">
+  <meta name="description" content="SeekMoon，由 MoonBit 团队打造的智能体开发环境。编写、理解、审查代码，在同一个工作空间。">
+  <title>SeekMoon — 与智能体，一起构建。</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="SeekMoon 首页"><img src="assets/mark.svg" width="27" height="27" alt=""><span>SeekMoon</span></a>
+    <a class="doc-link" href="https://github.com/moonbitlang/openseek#readme" target="_blank" rel="noopener noreferrer">文档 ↗</a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <h1 id="hero-title"><span>与智能体，</span><span>一起构建。</span></h1>
+      <p><span>编写、理解、审查代码，</span><span>在同一个工作空间。</span></p>
+      <div class="download-actions" aria-label="下载 SeekMoon">
+        <a class="button" href="https://cli.moonbitlang.cn/openseek/desktop/releases/v0.2.5/SeekMoon.dmg" aria-describedby="download-note">下载 macOS 版 <span aria-hidden="true">↓</span></a>
+        <a class="button button-secondary" href="https://cli.moonbitlang.cn/openseek/desktop/releases/v0.2.5/SeekMoon-windows-x64-setup.exe" aria-describedby="download-note">下载 Windows 版 <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="download-note" id="download-note">v0.2.5 · macOS（Apple 芯片） / Windows（x64）</p>
+    </section>
+    <section class="product wrap" aria-label="SeekMoon 产品预览">
+      <div class="product-tabs" role="tablist" aria-label="切换产品截图">
+        <button id="tab-workspace" role="tab" aria-selected="true" aria-controls="product-panel" data-view="workspace">智能体协作</button>
+        <button id="tab-review" role="tab" aria-selected="false" tabindex="-1" aria-controls="product-panel" data-view="review">代码审查</button>
+        <button id="tab-visualization" role="tab" aria-selected="false" tabindex="-1" aria-controls="product-panel" data-view="visualization">可视化</button>
+      </div>
+      <div class="product-window" id="product-panel" role="tabpanel" aria-labelledby="tab-workspace"><img id="product-image" src="assets/workspace.png" width="3456" height="2168" alt="SeekMoon 真实界面：左侧智能体任务与右侧代码变更审查" fetchpriority="high"></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a href="https://www.moonbitlang.com/" target="_blank" rel="noopener noreferrer">Built with MoonBit</a><a href="https://github.com/moonbitlang/openseek" target="_blank" rel="noopener noreferrer">开源于 GitHub ↗</a></footer>
+</body>
+</html>
