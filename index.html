@@ -34,9 +34,15 @@
         <button id="tab-review" role="tab" aria-selected="false" tabindex="-1" aria-controls="product-panel" data-view="review">代码审查</button>
         <button id="tab-visualization" role="tab" aria-selected="false" tabindex="-1" aria-controls="product-panel" data-view="visualization">可视化</button>
       </div>
-      <div class="product-window" id="product-panel" role="tabpanel" aria-labelledby="tab-workspace"><img id="product-image" src="assets/workspace.png" width="3456" height="2168" alt="SeekMoon 真实界面：左侧智能体任务与右侧代码变更审查" fetchpriority="high"></div>
+      <div class="product-window" id="product-panel" role="tabpanel" aria-labelledby="tab-workspace"><a class="image-open" id="image-open" href="assets/workspace.png" target="_blank" rel="noopener noreferrer" aria-label="放大查看当前产品截图"><img id="product-image" src="assets/workspace.png" width="3456" height="2168" alt="SeekMoon 真实界面：左侧智能体任务与右侧代码变更审查" fetchpriority="high"></a></div>
+      <div class="preview-tools"><span>点击图片，放大查看代码细节</span><a id="open-original" href="assets/workspace.png" target="_blank" rel="noopener noreferrer">查看原图 ↗</a></div>
     </section>
   </main>
+  <dialog id="image-viewer" aria-labelledby="viewer-title">
+    <div class="viewer-toolbar"><h2 id="viewer-title">产品截图</h2><div class="viewer-controls"><button type="button" id="zoom-out" aria-label="缩小截图">−</button><output id="zoom-level" aria-live="polite">100%</output><button type="button" id="zoom-in" aria-label="放大截图">＋</button><button type="button" id="zoom-fit">全图</button><button type="button" id="zoom-original">原尺寸</button><button type="button" id="viewer-close" aria-label="关闭截图" autofocus>关闭 ×</button></div></div>
+    <p class="viewer-hint">拖动或滚动查看细节；手机可滑动浏览。按 Esc 关闭。</p>
+    <div id="viewer-viewport" tabindex="0" aria-label="截图查看区域，可滚动浏览"><img id="viewer-image" alt=""></div>
+  </dialog>
   <footer class="footer wrap"><nav class="friend-links" aria-label="友情链接"><span>友情链接</span><a href="https://www.moonbitlang.cn/" target="_blank" rel="noopener noreferrer">MoonBit 官网</a><a href="https://docs.moonbitlang.cn/" target="_blank" rel="noopener noreferrer">MoonBit 中文文档</a><a href="https://mooncakes.io/" target="_blank" rel="noopener noreferrer">Mooncakes</a></nav><a href="https://github.com/moonbitlang/openseek" target="_blank" rel="noopener noreferrer">开源于 GitHub ↗</a></footer>
 </body>
 </html>
