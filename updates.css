@@ -1,0 +1,25 @@
+html{scroll-padding-top:28px}
+.header{border-bottom:1px solid var(--line)}
+.updates{padding-top:62px;padding-bottom:35px;max-width:900px}
+.eyebrow{font-size:10px;letter-spacing:1.2px;color:#777777}
+.updates-intro h1{font-size:43px;font-weight:550;letter-spacing:-1.8px;margin:18px 0 17px;line-height:1.4}
+.updates-intro>p{font-size:15px;color:#707070;line-height:1.9;margin:0}
+.section-nav{display:flex;gap:28px;font-size:12px;margin-top:27px;color:#555555}
+.section-nav a{padding-bottom:7px;border-bottom:1px solid #cccccc}
+.updates section{margin-top:54px}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.section-title h2{font-size:23px;font-weight:550;letter-spacing:-.5px;margin:0}
+.section-title>span{font-size:11px;color:#777777}
+.update-entry{display:grid;grid-template-columns:160px minmax(0,1fr);gap:30px;padding:32px 0;border-bottom:1px solid var(--line)}
+.entry-meta{display:flex;flex-direction:column;align-items:flex-start;gap:13px;color:#777777;font-size:11px;line-height:1.7;padding-top:3px}
+.status{border:1px solid #dddddd;border-radius:4px;padding:2px 8px;color:#555555;font-size:10px}
+.entry-content h3{font-size:19px;font-weight:550;line-height:1.5;letter-spacing:-.3px;margin:0 0 13px}
+.entry-content p,.entry-content li{font-size:13px;line-height:1.95;color:#606060}
+.entry-content p{margin:10px 0}.entry-content ul{padding-left:19px;margin:10px 0}.entry-content li{padding-left:2px;margin:6px 0}
+.entry-content .entry-note{font-size:11px;color:#777777;line-height:1.85;margin-top:18px}
+.entry-links{display:flex;flex-wrap:wrap;gap:14px 25px;margin-top:19px;font-size:12px}
+.entry-links a,.source-link{text-decoration:underline;text-underline-offset:4px;text-decoration-color:#cccccc}
+.source-link{font-size:11px;white-space:nowrap;margin-left:5px;color:#777777}
+.entry-links a:hover,.source-link:hover{color:#111111;text-decoration-color:#111111}
+.footer{border-top:1px solid var(--line)}
+@media(max-width:650px){.updates{padding-top:38px}.updates-intro h1{font-size:33px}.updates-intro>p{font-size:13px}.updates section{margin-top:38px}.section-title h2{font-size:21px}.section-title>span{font-size:10px}.update-entry{grid-template-columns:1fr;gap:16px;padding:26px 0}.entry-meta{flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px;padding:0}.entry-content h3{font-size:18px}.entry-content p,.entry-content li{font-size:12px}.section-nav{font-size:11px;gap:25px}}

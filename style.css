@@ -14,6 +14,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .header{height:88px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:8px;font-size:21px;font-weight:600;letter-spacing:-.6px}
 .doc-link{font-size:13px;color:var(--muted)}
+.header-nav{display:flex;align-items:center;gap:26px}
+.header-nav [aria-current="page"]{color:var(--text)}
 .doc-link:hover,.footer a:hover{color:var(--accent)}
 .hero{text-align:center;padding:77px 0 63px}
 .hero h1{font-size:clamp(36px,4.4vw,58px);line-height:1.4;letter-spacing:-2.5px;font-weight:550;margin:0}
@@ -42,3 +44,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 @media(max-width:460px){.download-actions{gap:9px}.download-actions .button{gap:10px;padding:12px 13px;font-size:11px}.hero .download-note{max-width:none;font-size:9px;letter-spacing:-.15px}}
 @media(max-width:650px){.footer{flex-direction:column;align-items:flex-start;gap:17px}.friend-links,.footer-actions{gap:10px 14px}}
 @media(max-width:460px){.download-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:300px;margin-inline:auto}.download-actions .button{justify-content:center;padding-inline:8px}.button-browser{grid-column:1/-1}.hero .download-help{max-width:none;font-size:10px;margin-top:7px}}
+@media(max-width:460px){.header-nav{gap:16px;flex-shrink:0}}
