@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbf8">
+  <meta name="description" content="SeekMoon 中文使用指南：下载安装、配置模型 API Key、开始第一个任务、审查代码变更与常见问题。">
+  <title>中文使用文档 — SeekMoon</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+  <a class="skip-link" href="#guide">跳到文档正文</a>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="SeekMoon 首页"><img src="assets/mark.svg" width="27" height="27" alt=""><span>SeekMoon</span></a>
+    <a class="doc-link" href="./">返回首页 ↗</a>
+  </header>
+  <div class="docs-layout wrap">
+    <aside class="docs-sidebar">
+      <nav aria-label="文档目录">
+        <p class="toc-title">使用指南</p>
+        <a href="#install">01　下载与安装</a>
+        <a href="#setup">02　首次配置</a>
+        <a href="#first-task">03　第一个任务</a>
+        <a href="#review">04　理解与审查代码</a>
+        <a href="#sessions">05　继续与管理任务</a>
+        <a href="#faq">06　常见问题</a>
+        <a href="#terms">07　界面词汇对照</a>
+      </nav>
+    </aside>
+    <main class="docs-content" id="guide">
+      <div class="docs-intro">
+        <span class="docs-kicker">SEEKMOON / 文档</span>
+        <h1>从这里开始。</h1>
+        <p class="docs-lead">安装 SeekMoon，连接模型，完成你的第一个开发任务。</p>
+        <p class="docs-meta">根据官方桌面端说明与产品介绍整理 · 核对日期：2026 年 9 月 21 日</p>
+        <p class="version-note">本网站提供 v0.2.5 安装包。以下说明参考官方当前文档，部分功能与按钮名称可能随版本变化，请以安装后的界面为准。</p>
+      </div>
+      <section id="install">
+        <h2><span>01</span> 下载与安装</h2>
+        <p>先选择与你的电脑匹配的安装包。当前下载入口提供 macOS Apple 芯片版和 Windows x64 版。</p>
+        <h3>macOS · Apple 芯片</h3>
+        <ol>
+          <li>在苹果菜单的「关于本机」中确认电脑使用 Apple 芯片，如 M1、M2、M3 等。</li>
+          <li><a href="https://cli.moonbitlang.cn/openseek/desktop/releases/v0.2.5/SeekMoon.dmg">下载 SeekMoon.dmg</a>，双击打开磁盘映像。</li>
+          <li>将 SeekMoon 拖入「应用程序」（Applications），再从「应用程序」中启动。</li>
+        </ol>
+        <h3>Windows · x64</h3>
+        <ol>
+          <li>在「设置 → 系统 → 关于」中查看系统类型，确认是 x64 电脑。</li>
+          <li><a href="https://cli.moonbitlang.cn/openseek/desktop/releases/v0.2.5/SeekMoon-windows-x64-setup.exe">下载 Windows 安装程序</a>，运行后按安装向导完成安装。</li>
+          <li>启动 SeekMoon，进入首次配置。</li>
+        </ol>
+        <p class="quiet-note">当前入口不包含 Intel Mac 或 Linux 安装包。其他平台请查看<a href="https://github.com/moonbitlang/openseek/tree/main/desktop" target="_blank" rel="noopener noreferrer">官方桌面端说明 ↗</a>。</p>
+      </section>
+      <section id="setup">
+        <h2><span>02</span> 首次配置</h2>
+        <p>SeekMoon 需要连接模型服务。请准备自己的 <strong>API Key（接口密钥）</strong>；模型调用由相应服务商向你的账号计费。</p>
+        <h3>以 DeepSeek 为例</h3>
+        <ol>
+          <li>进入 <a href="https://platform.deepseek.com/" target="_blank" rel="noopener noreferrer">DeepSeek 开放平台 ↗</a>，登录后创建 API Key，并确认账号可以使用 API 服务。</li>
+          <li>打开 SeekMoon。尚未配置可用服务时，会出现 API 设置窗口；也可以进入 <strong>Settings（设置）</strong>中的 API 区域。</li>
+          <li>选择 <strong>DeepSeek official</strong>，填入 API Key，按界面提示完成配置。</li>
+          <li>回到对话，在输入区选择可用模型，发送一条简单消息，确认能够收到回复。</li>
+        </ol>
+        <p class="quiet-note">API Key 填在设置中即可，不要放进聊天内容或项目文件。未配置可用服务时，发送按钮可能不可用。</p>
+        <h3>使用其他模型服务</h3>
+        <p>官方当前文档还列出了 Z.AI GLM、OpenRouter，以及用于其他兼容服务的 <strong>Custom URL（自定义地址）</strong>。选择对应服务并填写它提供的密钥；使用自定义地址时，按服务商说明填写兼容的 Chat Completions 接口地址。可选项以你安装的版本为准。</p>
+      </section>
+      <section id="first-task">
+        <h2><span>03</span> 第一个任务</h2>
+        <p>建议先在空白工作空间试一个小任务，熟悉「提出目标 → 查看过程 → 检查结果」的完整流程。</p>
+        <ol>
+          <li>点击侧边栏的 <strong>New chat（新建对话）</strong>。</li>
+          <li>确认本次任务使用的工作目录。默认情况下，对话会拥有自己的工作空间；让智能体先报告目录和已有文件，可以避免选错位置。</li>
+          <li>先发送下面这段话，确认目录后再让它开始编写。</li>
+        </ol>
+        <div class="prompt-example"><span class="example-label">可以直接使用的任务描述</span><pre>请先告诉我当前工作目录，以及目录里有哪些文件，暂时不要修改。
+
+我想在空白目录中创建一个 MoonBit 小项目，实现一个 add(a, b) 函数，返回两个整数之和，并添加一个测试。等我确认目录后再开始。</pre></div>
+        <p>目录确认无误后，可以继续说：</p>
+        <blockquote>可以开始。完成后请运行测试，并用中文说明改了哪些文件、测试是否通过。</blockquote>
+        <p>智能体会根据目标分析代码、实施修改并运行验证。读完结果后，再检查实际文件与测试输出；遇到失败，可以把完整报错作为后续任务继续处理。</p>
+      </section>
+      <section id="review">
+        <h2><span>04</span> 理解与审查代码</h2>
+        <p>任务完成后，打开 <strong>Diff Review（变更审查）</strong>。先确认修改范围，再看实现和测试是否符合要求。</p>
+        <dl class="feature-list">
+          <div><dt>按行查看变更</dt><dd>浏览新增和删除的内容，核对修改了哪些文件。</dd></div>
+          <div><dt>Token Diff · 词元差异</dt><dd>查看 MoonBit 代码时，减少换行和缩进带来的干扰，聚焦实际修改。</dd></div>
+          <div><dt>Syntax Tree Diff · 语法树差异</dt><dd>理解函数提取、变量重命名等结构变化；需要时查找定义与引用，检查影响范围。</dd></div>
+        </dl>
+        <figure><a href="assets/review.png" target="_blank" rel="noopener noreferrer" aria-label="在新标签页查看代码审查截图原图"><img src="assets/review.png" alt="SeekMoon 代码审查界面，展示代码差异与引用列表" loading="lazy"></a><figcaption>在变更审查中查看引用与关联代码。点击图片可查看原图。</figcaption></figure>
+        <h3>代码很多时，先看结构</h3>
+        <p>SeekMoon 可在 MoonBit 代码旁渲染文档和架构图，也支持语法树搜索。可以先让智能体解释模块关系，再缩小搜索和修改范围。这些能力的具体入口请结合当前版本和<a href="https://www.moonbitlang.com/blog/seekmoon-from-ide-to-ade" target="_blank" rel="noopener noreferrer">官方产品介绍 ↗</a>查看。</p>
+        <blockquote>请解释这次修改对调用方有什么影响，并列出测试尚未覆盖的情况。</blockquote>
+      </section>
+      <section id="sessions">
+        <h2><span>05</span> 继续与管理任务</h2>
+        <p>同一个目标可以在原对话里继续补充要求；另一个独立目标可以使用新对话。侧边栏中的历史对话可以重新打开，接着处理。</p>
+        <p>任务运行时，如果界面提供以下选项：</p>
+        <ul>
+          <li><strong>Steer now（立即补充指引）</strong>：将新要求加入正在进行的任务。</li>
+          <li><strong>Queue next（排队到下一轮）</strong>：等当前轮结束后再执行新要求。</li>
+          <li><strong>停止按钮（■）</strong>：中断当前运行。停止后先检查已经产生的修改，再决定下一步。</li>
+        </ul>
+      </section>
+      <section id="faq">
+        <h2><span>06</span> 常见问题</h2>
+        <details><summary>发送按钮为什么点不了？</summary><p>先检查 API 设置。官方说明中，未配置可用模型服务时会禁用发送。确认服务商、密钥及自定义地址填写正确，再根据界面给出的提示排查。</p></details>
+        <details><summary>配置了密钥，仍然请求失败怎么办？</summary><p>保存完整报错，检查网络、服务商 API 可用状态，以及账号余额或配额。密钥失效时在设置中更换；不要将密钥贴进反馈截图。</p></details>
+        <details><summary>生成的文件保存在哪里？</summary><p>官方说明中的默认工作空间位于系统「文档」目录下的 <code>OpenSeek/&lt;session-id&gt;</code>，系统配置可能改变其实际位置。已有项目请以当前任务的工作目录为准；不确定时先让智能体报告目录。</p></details>
+        <details><summary>测试失败了，要重新开一个任务吗？</summary><p>通常可以在当前对话继续，让智能体根据具体报错定位原因、修复后重新运行相关测试。这样能保留之前的任务上下文。</p></details>
+        <details><summary>安装时遇到系统拦截怎么办？</summary><p>先确认安装包来自本网站链接指向的 MoonBit 官方下载域名，并记录系统提示。若仍无法安装，请附上系统版本、芯片或架构、安装包版本和错误截图，到<a href="https://github.com/moonbitlang/openseek/issues" target="_blank" rel="noopener noreferrer">官方问题区 ↗</a>反馈。</p></details>
+        <details><summary>如何获取新版？</summary><p>回到<a href="index.html#download">首页下载入口</a>查看网站提供的版本。桌面端的更新行为可参考<a href="https://github.com/moonbitlang/openseek/blob/main/desktop/README.md#updates" target="_blank" rel="noopener noreferrer">官方更新说明 ↗</a>；不要把网站显示的版本号当作实时更新检查。</p></details>
+      </section>
+      <section id="terms">
+        <h2><span>07</span> 界面词汇对照</h2>
+        <p>认识这几个英文词，操作时会更容易找到对应入口。</p>
+        <table><thead><tr><th scope="col">界面文字</th><th scope="col">中文含义</th></tr></thead><tbody><tr><td>Settings</td><td>设置</td></tr><tr><td>API Key</td><td>接口密钥</td></tr><tr><td>New chat</td><td>新建对话</td></tr><tr><td>Workspace</td><td>工作空间</td></tr><tr><td>Diff Review</td><td>代码变更审查</td></tr><tr><td>Find References</td><td>查找引用</td></tr></tbody></table>
+      </section>
+      <section class="docs-sources" aria-labelledby="sources-title"><h2 id="sources-title">参考资料</h2><p>本页是中文上手指南，不替代各版本发布说明。内容依据：</p><ul><li><a href="https://github.com/moonbitlang/openseek/blob/main/desktop/README.md" target="_blank" rel="noopener noreferrer">SeekMoon 官方桌面端说明 ↗</a></li><li><a href="https://www.moonbitlang.com/blog/seekmoon-from-ide-to-ade" target="_blank" rel="noopener noreferrer">SeekMoon：从 IDE 到 ADE ↗</a></li><li><a href="https://openseek-api.moonbitlang.cn/desktop/releases/latest.json" target="_blank" rel="noopener noreferrer">官方稳定版下载清单 ↗</a></li></ul></section>
+    </main>
+  </div>
+  <footer class="footer wrap"><a href="./">← 返回首页</a><a href="https://github.com/moonbitlang/openseek/issues" target="_blank" rel="noopener noreferrer">问题反馈 ↗</a></footer>
+</body>
+</html>

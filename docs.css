@@ -1,0 +1,36 @@
+.header{border-bottom:1px solid var(--line)}
+html{scroll-padding-top:28px}
+.docs-layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:52px;padding-top:54px;padding-bottom:32px;align-items:start}
+.docs-sidebar{position:sticky;top:32px}
+.toc-title{font-size:12px;color:var(--muted);margin:0 0 18px;padding-left:10px}
+.docs-sidebar a{display:block;padding:10px;font-size:13px;color:#657160;border-left:1px solid var(--line)}
+.docs-sidebar a:hover,.docs-sidebar a:focus-visible{color:var(--green);background:#edf1e8;border-left-color:var(--green)}
+.docs-content{min-width:0;font-size:14px;line-height:1.95;color:#535e51}
+.docs-kicker{font-size:10px;color:#88917f;letter-spacing:1.2px}
+.docs-content h1{font-size:43px;font-weight:550;letter-spacing:-1.8px;line-height:1.4;margin:15px 0 17px;color:var(--text)}
+.docs-content .docs-lead{font-size:17px;line-height:1.8;color:#65715e;margin:0 0 15px}
+.docs-content .docs-meta{font-size:11px;color:#858e7d;margin:0 0 20px}
+.version-note{font-size:12px;line-height:1.9;background:#f0f3eb;border-radius:4px;padding:14px 18px;margin:0}
+.docs-content section{margin-top:44px;padding-top:34px;border-top:1px solid var(--line)}
+.docs-content h2{font-size:24px;font-weight:550;line-height:1.5;letter-spacing:-.7px;color:var(--text);margin:0 0 20px}
+.docs-content h2>span{font:11px ui-monospace,SFMono-Regular,monospace;color:#93a087;margin-right:14px;vertical-align:middle;letter-spacing:0}
+.docs-content h3{font-size:16px;font-weight:600;color:var(--text);margin:25px 0 12px}
+.docs-content p{margin:12px 0}
+.docs-content a{color:var(--green);text-decoration:underline;text-decoration-color:#b8c4af;text-underline-offset:4px;overflow-wrap:anywhere}
+.docs-content a:hover{text-decoration-color:var(--green)}
+.docs-content ol,.docs-content ul{padding-left:23px;margin:14px 0}
+.docs-content li{padding-left:3px;margin:8px 0}
+.docs-content strong{font-weight:600;color:#3c4838}
+.docs-content .quiet-note{font-size:12px;color:#798372;line-height:1.9;border-left:2px solid #ccd7c1;padding-left:15px;margin:21px 0}
+.prompt-example{background:#eef2e8;border:1px solid #e2e8da;border-radius:5px;padding:18px 21px;margin:22px 0}
+.example-label{font-size:11px;color:#839076}
+.prompt-example pre{font:13px/1.95 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;color:#42523c;margin:10px 0 0}
+.docs-content blockquote{border-left:2px solid #a7b899;margin:18px 0;padding:6px 0 6px 18px;color:#5d6e52;font-size:13px}
+.feature-list{margin:20px 0}.feature-list>div{margin:18px 0}.feature-list dt{font-weight:600;color:#3c4838}.feature-list dd{margin:5px 0 0}
+.docs-content figure{margin:25px 0}.docs-content figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:5px}.docs-content figcaption{font-size:11px;color:#87907f;line-height:1.7;margin-top:9px}
+.docs-content details{border-bottom:1px solid var(--line);padding:15px 0}.docs-content summary{cursor:pointer;color:#3d4b38;font-size:14px;padding-right:12px}.docs-content details p{font-size:13px;padding-left:17px;margin:12px 0 4px}
+.docs-content code{font:12px/1.8 ui-monospace,SFMono-Regular,monospace;background:#eef1e8;border-radius:3px;padding:2px 4px;overflow-wrap:anywhere}
+.docs-content table{border-collapse:collapse;width:100%;font-size:13px;margin-top:20px}.docs-content th{text-align:left;font-size:12px;color:#77826c;font-weight:500}.docs-content td,.docs-content th{padding:10px 12px;border-bottom:1px solid var(--line)}.docs-content td:first-child{width:50%;color:#3c5035}
+.docs-content .docs-sources{font-size:12px}.docs-sources h2{font-size:17px}.footer{border-top:1px solid var(--line)}
+@media(max-width:850px){.docs-layout{grid-template-columns:170px minmax(0,1fr);gap:28px}.docs-sidebar a{font-size:12px}}
+@media(max-width:650px){.docs-layout{display:block;padding-top:25px}.docs-sidebar{position:static;margin-bottom:32px}.docs-sidebar nav{display:flex;flex-wrap:wrap;gap:5px 18px;border-bottom:1px solid var(--line);padding-bottom:20px}.toc-title{width:100%;padding:0;margin:0 0 6px}.docs-sidebar a{padding:5px 0;border:0;font-size:11px}.docs-content h1{font-size:35px}.docs-content .docs-lead{font-size:15px}.docs-content{font-size:13px}.docs-content h2{font-size:22px}.docs-content h3{font-size:15px}.docs-content section{margin-top:32px;padding-top:27px}.version-note{padding:12px 14px;font-size:11px}.docs-content .docs-meta{font-size:10px}.prompt-example{padding:14px 16px}.docs-content summary{font-size:13px}.docs-content table{font-size:12px}}
