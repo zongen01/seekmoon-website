@@ -24,6 +24,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .button-secondary{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1px #cccccc}
 .button-secondary:hover{background:#f5f5f5}
 .hero .download-note{font-size:11px;color:var(--muted);margin:14px 0 0;line-height:1.8}
+.hero .download-help{font-size:11px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+.download-help a{text-decoration:underline;text-decoration-color:#cccccc;text-underline-offset:4px}
+.download-help a:hover{color:var(--text)}
 .product-tabs{display:flex;justify-content:center;gap:30px;margin-bottom:20px}
 .product-tabs button{border:0;background:none;color:#777777;padding:7px 0;cursor:pointer;font-size:12px;border-bottom:1px solid transparent}
 .product-tabs button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent)}
@@ -38,3 +41,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 @media(max-width:460px){.download-actions{gap:9px}.download-actions .button{gap:10px;padding:12px 13px;font-size:11px}.hero .download-note{max-width:none;font-size:9px;letter-spacing:-.15px}}
 @media(max-width:650px){.footer{flex-direction:column;align-items:flex-start;gap:17px}.friend-links,.footer-actions{gap:10px 14px}}
+@media(max-width:460px){.download-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:300px;margin-inline:auto}.download-actions .button{justify-content:center;padding-inline:8px}.button-browser{grid-column:1/-1}.hero .download-help{max-width:none;font-size:10px;margin-top:7px}}

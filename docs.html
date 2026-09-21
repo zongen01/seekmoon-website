@@ -53,6 +53,15 @@
           <li>启动 SeekMoon，进入首次配置。</li>
         </ol>
         <p class="quiet-note">当前入口不包含 Intel Mac 或 Linux 安装包。其他平台请查看<a href="https://github.com/moonbitlang/openseek/tree/main/desktop" target="_blank" rel="noopener noreferrer">官方桌面端说明 ↗</a>。</p>
+        <h3 id="browser-package">Browser · 浏览器控制台资源包</h3>
+        <p><strong>Browser</strong> 是“浏览器”的意思。下载页面中的 <code>browser</code> 对应 <a href="https://cli.moonbitlang.cn/openseek/desktop/releases/v0.2.5/SeekMoon.browser.tar.gz">SeekMoon.browser.tar.gz（v0.2.5）</a>，是供浏览器控制台部署使用的前端资源压缩包，和 macOS、Windows 桌面安装包的用途不同。</p>
+        <p>如果你只是想通过网页使用已连接的设备，按官方设备页面的提示操作即可：</p>
+        <ol>
+          <li>下载并启动 SeekMoon 桌面端。</li>
+          <li>在桌面端和官方网页使用同一个 GitHub 账号登录。</li>
+          <li>保持桌面端设备在线；设备出现在网页列表后，在控制台中打开它。</li>
+        </ol>
+        <p class="quiet-note">单独下载或解压 Browser 包，不会自动完成登录或设备连接。准备自行部署时，请参考<a href="https://github.com/moonbitlang/openseek/blob/main/desktop/BUILD.md" target="_blank" rel="noopener noreferrer">官方 Browser 构建说明 ↗</a>和配套服务配置。</p>
       </section>
       <section id="setup">
         <h2><span>02</span> 首次配置</h2>
@@ -114,6 +123,7 @@
         <details><summary>测试失败了，要重新开一个任务吗？</summary><p>通常可以在当前对话继续，让智能体根据具体报错定位原因、修复后重新运行相关测试。这样能保留之前的任务上下文。</p></details>
         <details><summary>安装时遇到系统拦截怎么办？</summary><p>先确认安装包来自本网站链接指向的 MoonBit 官方下载域名，并记录系统提示。若仍无法安装，请附上系统版本、芯片或架构、安装包版本和错误截图，到<a href="https://github.com/moonbitlang/openseek/issues" target="_blank" rel="noopener noreferrer">官方问题区 ↗</a>反馈。</p></details>
         <details><summary>如何获取新版？</summary><p>回到<a href="index.html#download">首页下载入口</a>查看网站提供的版本。桌面端的更新行为可参考<a href="https://github.com/moonbitlang/openseek/blob/main/desktop/README.md#updates" target="_blank" rel="noopener noreferrer">官方更新说明 ↗</a>；不要把网站显示的版本号当作实时更新检查。</p></details>
+        <details><summary>Browser 包下载后，能像桌面软件一样安装吗？</summary><p>不能。它是浏览器控制台的前端资源压缩包。日常使用可按<a href="#browser-package">Browser 使用说明</a>连接在线桌面设备；只有准备自行部署时才需要处理这些资源及配套服务。</p></details>
       </section>
       <section id="terms">
         <h2><span>07</span> 界面词汇对照</h2>
